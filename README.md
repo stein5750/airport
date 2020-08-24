@@ -4,7 +4,7 @@ Consequently the project will be subject to major changes in code and design,
 and may break at any time.<br/>
 
 ## Java
-Consists of 7 interacting projects and a total of approximately 157 files, mostly Java.<br/>
+Consists of 7 interacting projects and more than 157 files and 6577 lines of code, mostly Java.<br/>
 Includes concurrency and Spring Reactor.
 
 ## Servers
