@@ -3,6 +3,10 @@ Just a project while reading up on various topics.<br/>
 Consequently the project will be subject to major changes in code and design,
 and may break at any time.<br/>
 
+## Java
+Consists of 7 interacting projects and a total of approximately 157 files, mostly Java.<br/>
+Includes concurrency and Spring Reactor.
+
 ## Servers
 ### airport-towerserver
 Based on Spring Reactor.<br/>
