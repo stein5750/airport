@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+  background-color: blue;
+}
+
+table { 
+  width: 100%;
+  height: 100%;
+  margin: 0; 
+  padding: 0;
+  border:0px;
+}
+
+th,td {
+  padding: 1vw;
+  
+}
+
+th.th_main {
+  font-size: 10vw;
+  background-color:white;
+  color: blue;
+  height:1em;
+}
+
+
+th.th_other {
+  font-size: 4vw;
+  background-color:blue;
+  color: white;
+  border:10px;
+  border-color: white;
+  text-align: left;
+  height:4vw;
+}
+
+
+table tbody.list td{
+  color:yellow;
+  font-size: 2vw;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#arrivalsInnerTbody td{
+	text-align: left;
+	height:2vw;	
+}
+
+#departuresInnerTbody td{
+	text-align: left;
+	height:2vw;
+}
+
+#buttons td{
+	text-align: center;
+}
+
+#buttonList td{
+	text-align: center;
+}
+
+error{
+  color:red !important;
+}
+
+
+table td.monitor {
+  color:white;
+  font-size: 3vw;
+  text-align: left;
+  width:50%;
+}
+
+table td.data {
+  font-weight: bold;
+  font-size: 3vw;
+  color:yellow;
+  white-space: nowrap;
+}
+
+table td.footer {
+  font-weight: normal;
+  font-size: 2vw;
+  background-color:white;
+  color:blue;
+  text-align: center;
+  height:1em;  
+}
+
+button{
+  width: 30%;
+}

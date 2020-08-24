@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- file:///home/stein/Documents/p/eclipse/workspace_repetisjon/airport-gateinfo-webpages/public/index.html -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+	<script src="../resources/js/allArrivals.js"></script>
+	<script src="../resources/js/clock.js"></script>
+	<title>Monitor all arrivals</title>
+</head>
+<body onload="displayClock()">
+	<table id="arrivals">
+		<thead>
+			<tr>
+				<th class="th_main">
+					Arrivals
+				</th>								
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<table>
+						<thead>
+						
+							<tr>
+								<th class="th_other">
+									Time:				
+								</th>	
+								<th class="th_other">
+									Flight:										
+								</th>
+								<th class="th_other">
+									Origin:				
+								</th>
+								<th class="th_other">
+									Gate:				
+								</th>							
+								<th class="th_other">
+									Status:				
+								</th>							
+							</tr>
+						</thead>
+						<tbody id="arrivalsInnerTbody" class="list">
+							<tr>
+								<td>N/A</td>
+								<td>N/A</td>
+								<td>N/A</td>
+								<td>N/A</td>
+							</tr>
+						</tbody>
+						<tfoot>				
+						</tfoot>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>	
+			<tr>
+				<td class="footer">
+					Local time:<span id="clock"></span>
+				</td>
+			</tr>
+		</tfoot>			
+	</table>	
+</body>
+</html>

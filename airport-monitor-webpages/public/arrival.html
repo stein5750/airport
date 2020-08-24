@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+	<script src="../resources/js/arrival.js"></script>
+	<script src="../resources/js/path2header.js"></script>
+	<script src="../resources/js/clock.js"></script>	
+	<title>Monitor arrival</title>
+</head> 
+<body onload="updateHeader();displayClock();getArrivals()">
+	<table>
+		<thead>
+			<tr>
+				<th class="th_main" colspan="2">
+					Gate <span id="gateName"></span>
+				</th>								
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="monitor">
+					Flight:
+				</td>
+				<td class="monitor">
+					Arrival					
+				</td>			
+			</tr>
+			<tr>
+				<td class="data">
+					<span id="flight"></span>
+				</td>
+				<td class="data">
+					<span id="arrivalTime"></span>
+					
+				</td>
+			</tr>		
+			<tr>
+				<td class="monitor">
+					Origin:
+				</td>
+				<td class="monitor">
+					Status:
+				</td>			
+			</tr>
+			<tr>				
+				<td class="data">
+					<span id="origin"></span>
+				</td>			
+				<td class="data">
+					<span id="status"></span>
+				</td>			
+			</tr>
+		</tbody>
+		<tfoot>	
+			<tr>
+				<td class="footer" colspan="2">
+					Local time:<span id="clock"></span>
+				</td>
+			</tr>	
+		</tfoot>		
+	</table>	
+</body>
+</html>
