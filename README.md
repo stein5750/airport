@@ -25,38 +25,39 @@ Handles communication between gates and monitors (web-based information boards).
 ### airport-aircrafts
 Spawns multiple aircrafts running in separate threads.<br/>
 Each aircraft communicates with airport-tower via airport-tower-server.<br/>
-- Sends flightplan to tower.
-- Sends landingrequest to tower.
-- Receives landingpermission from tower.
-- Sends takeoffrequest to tower.
-- Receives takeoffpermission from tower.
+* Sends flightplan to tower.
+* Sends landingrequest to tower.
+* Receives landingpermission from tower.
+* Sends takeoffrequest to tower.
+* Receives takeoffpermission from tower.
 
 ### airport-tower
 Communicates with aircrafts via airport-towerserver.<br/>
 Communicates with gates via airport-gateserver.<br/>
-- Receives flightplan from aircraft.
-- Receives landing request form aircraft.
-- Receives available gate from airport-gateserver.
-- Sends landing permission with gatename to aircraft.
-- Sends gatename as unavailable to airport-gateserver.
-- Sends info about flight and arrivaltime to a gate.
-- Sends info about flight and departuretime to the same gate.
-- Receives takeoff request from aircraft.
-- Sends takeoff permission from to aircraft.
+* Receives flightplan from aircraft.
+* Receives landing request form aircraft.
+* Receives available gate from airport-gateserver.
+* Sends landing permission with gatename to aircraft.
+* Sends gatename as unavailable to airport-gateserver.
+* Sends info about flight and arrivaltime to a gate.
+* Sends info about flight and departuretime to the same gate.
+* Receives takeoff request from aircraft.
+* Sends takeoff permission from to aircraft.
 
 ### airport-gates
 Initiates multiple gates running in separate threads.<br/>
 Each gate communicates via airport-gateserver and airport-monitor-server.<br/>
-- Receives info about flight and arrivaltime from tower.
-- Receives info about flight and departuretime from tower.
-- Sends info about flight and arrivaltime to monitors.
-- Sends info about flight and departuretime to monitors.
-- Sends statusupdates for gates to monitors, like "Boarding", Go to gate" and more.
+* Receives info about flight and arrivaltime from tower.
+* Receives info about flight and departuretime from tower.
+* Sends info about flight and arrivaltime to monitors.
+* Sends info about flight and departuretime to monitors.
+* Sends statusupdates for gates to monitors, like "Boarding", Go to gate" and more.
 
 ### airport-monitor-webpages
-- Gets information about arrivals and departures from airport-monitor-server
-- index.html : Dynamically created buttons for selecting pages.
-- allArrivals.html : Displays all arrivals.
-- allDepartures.html : Displays all departures.
-- arrival.html : Displays arrival for specific gate.
-- departure.html : Displays departure for specific gate.
+* Gets information about arrivals and departures from airport-monitor-server
+![Example image](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/example/example.jpg)
+* index.html : Dynamically created buttons for selecting pages.
+* allArrivals.html : Displays all arrivals.
+* allDepartures.html : Displays all departures.
+* arrival.html : Displays arrival for specific gate.
+* departure.html : Displays departure for specific gate.
