@@ -55,9 +55,18 @@ Each gate communicates via airport-gateserver and airport-monitor-server.<br/>
 
 ### airport-monitor-webpages
 * Gets information about arrivals and departures from airport-monitor-server
-![Example image](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/example/example.jpg)
-* index.html : Dynamically created buttons for selecting pages.
-* allArrivals.html : Displays all arrivals.
-* allDepartures.html : Displays all departures.
-* arrival.html : Displays arrival for specific gate.
-* departure.html : Displays departure for specific gate.
+<br/>
+![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_index)
+index.html : Dynamically created buttons for selecting pages.
+<br/>
+![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_allArrivals)
+allArrivals.html : Displays all arrivals.
+<br/>
+![Example image all departures](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_allDepartures)
+allDepartures.html : Displays all departures.
+<br/>
+![Example image arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_arrival)
+arrival.html : Displays arrival for specific gate.
+<br/>
+![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_departure)
+departure.html : Displays departure for specific gate.
