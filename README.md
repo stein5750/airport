@@ -57,10 +57,6 @@ Each gate communicates via airport-gateserver and airport-monitor-server.<br/>
 Gets information about arrivals and departures from airport-monitor-server
 <br/>
 <br/>
-![Example image index](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_index.png)
-index.html : Dynamically created buttons for selecting pages.
-<br/>
-<br/>
 ![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_allArrivals.png)
 allArrivals.html : Displays all arrivals.
 <br/>
