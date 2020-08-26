@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.mongodb.client.result.DeleteResult;
+
 import airport.gateserver.domain.JourneyAndGateName;
 import airport.gateserver.service.DepartureService;
 import reactor.core.publisher.Mono;
@@ -58,4 +60,11 @@ public class DepartureController {
         return service.get(gateName);
     }
 
+    /*
+     * TODO comment
+     */
+    @PostMapping(value = "/remove")
+    public Mono<DeleteResult> remove( @RequestBody String gateName) {
+        return service.remove(gateName);
+    }
 }

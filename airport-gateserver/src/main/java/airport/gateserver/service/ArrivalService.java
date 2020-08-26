@@ -3,6 +3,8 @@ package airport.gateserver.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.mongodb.client.result.DeleteResult;
+
 import airport.gateserver.domain.JourneyAndGateName;
 import airport.gateserver.repository.ArrivalRepository;
 import reactor.core.publisher.Mono;
@@ -19,6 +21,10 @@ public class ArrivalService {
 
     public Mono<JourneyAndGateName> get( String gateName) {
         return repository.get(gateName);
+    }
+
+    public Mono<DeleteResult> remove( String gateName) {
+        return repository.remove(gateName);
     }
 
 }

@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
+import com.mongodb.client.result.DeleteResult;
+
 import airport.gateserver.domain.JourneyAndGateName;
 import reactor.core.publisher.Mono;
 
@@ -25,6 +27,12 @@ public class ArrivalRepository {
         Query query = new Query();
         query.addCriteria(Criteria.where("gateName").is(gateName));
         return template.findAndRemove(query, JourneyAndGateName.class, collectionGateArrivals);
+    }
+
+    public Mono<DeleteResult> remove( String gateName) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("gateName").is(gateName));
+        return template.remove(query, JourneyAndGateName.class, collectionGateArrivals);
     }
 
 }

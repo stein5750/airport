@@ -21,6 +21,10 @@ public class GateClientArrival {
                 .retrieve().bodyToMono(Void.class).subscribe();
     }
 
+//    public void removeGateInformation( String gateName) {
+//        client.post().uri("/remove").accept(MediaType.APPLICATION_JSON)
+//                .body(BodyInserters.fromPublisher(Mono.just(gateName), String.class));
+//    }
     public void removeGateInformation( String gateName) {
         client.post().uri("/remove").accept(MediaType.APPLICATION_JSON).body(BodyInserters.fromValue(gateName))
                 .retrieve().bodyToMono(Void.class).subscribe();
