@@ -54,19 +54,24 @@ Each gate communicates via airport-gateserver and airport-monitor-server.<br/>
 * Sends statusupdates for gates to monitors, like "Boarding", Go to gate" and more.
 
 ### airport-monitor-webpages
-* Gets information about arrivals and departures from airport-monitor-server
+Gets information about arrivals and departures from airport-monitor-server
 <br/>
-![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_index)
+<br/>
+![Example image index](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_index.png)
 index.html : Dynamically created buttons for selecting pages.
 <br/>
-![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_allArrivals)
+<br/>
+![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_allArrivals.png)
 allArrivals.html : Displays all arrivals.
 <br/>
-![Example image all departures](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_allDepartures)
+<br/>
+![Example image all departures](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_allDepartures.png)
 allDepartures.html : Displays all departures.
 <br/>
-![Example image arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_arrival)
+<br/>
+![Example image arrival](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_arrival.png)
 arrival.html : Displays arrival for specific gate.
 <br/>
-![Example image all arrivals](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_departure)
+<br/>
+![Example image departure](https://github.com/stein5750/airport/blob/master/airport-monitor-webpages/resources/examples/example_departure.png)
 departure.html : Displays departure for specific gate.
